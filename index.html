@@ -33,17 +33,15 @@
 ================================================================ -->
 <nav class="navbar">
   <img src="assets/logo-branco-full-sales.png" alt="Full Sales System" class="navbar-logo">
-  <a href="#agendar" class="btn-cta">Quero Agendar Agora</a>
 </nav>
+
+<!-- STEP BAR -->
+<div class="tarja" role="status">Passo 2 de 3: Parabéns! O seu Playbook Comercial já está no seu e-mail!</div>
 
 <!-- ================================================================
      BOOKING SECTION
 ================================================================ -->
 <section class="section section-dark" id="agendar">
-  <!-- STEP PILL -->
-  <div class="tarja" role="status">
-    <strong>PASSO 3 DE 4:</strong> PARABÉNS! O seu Playbook Comercial já está no seu e-mail!
-  </div>
   <div class="container">
     <div class="booking-intro">
       <p class="headline">
@@ -60,34 +58,9 @@
 </section>
 
 <!-- ================================================================
-     VIDEO + CTA + WARNING
-================================================================ -->
-<section class="section section-gray">
-  <div class="container">
-    <div class="video-wrapper">
-      <div id="vturb-placeholder" role="button" aria-label="Reproduzir vídeo"
-           style="position:relative;cursor:pointer;background:#111;aspect-ratio:16/9;width:100%;display:flex;align-items:center;justify-content:center;">
-        <div style="width:72px;height:72px;background:rgba(255,255,255,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;pointer-events:none;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="#1a1a1a"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-center" style="margin-top: 36px;">
-      <a href="#agendar" class="btn-cta">Quero Agendar Agora</a>
-    </div>
-    <div class="warning-box">
-      <strong>Atenção!</strong> Em breve nosso time entrará em contato pelo telefone cadastrado
-      para confirmar a sua presença na reunião de diagnóstico.<br>
-      Seu horário só estará <strong>válido após essa ligação de confirmação e efetivação</strong>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================================
      VALUE PROPOSITIONS
 ================================================================ -->
-<section class="section section-dark">
+<section class="section section-dark" id="diagnostico">
   <div class="container">
     <h2 class="section-title">O que esse diagnóstico <span>fornece?</span></h2>
     <div class="title-divider"></div>
@@ -123,55 +96,6 @@
         <h3>Valor de Mercado</h3>
         <p>Um negócio que passa a ter Equity, pois para de depender do expert para faturar</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================================
-     TESTIMONIALS — HORIZONTAL CAROUSEL
-================================================================ -->
-<section class="section section-dark">
-  <div class="container">
-    <h2 class="section-title">Veja o que <span>empresários</span> de diferentes segmentos dizem sobre nós.</h2>
-    <div class="title-divider"></div>
-
-    <div class="carousel-outer" id="testimonialCarousel">
-      <div class="carousel-track" id="carouselTrack">
-        <div class="carousel-slide">
-          <img
-            src="assets/1.png"
-            alt="Depoimento de empresário"
-            loading="lazy"
-          >
-        </div>
-        <div class="carousel-slide">
-          <img
-            src="assets/2.png"
-            alt="Depoimento de empresário"
-            loading="lazy"
-          >
-        </div>
-        <div class="carousel-slide">
-          <img
-            src="assets/3.png"
-            alt="Depoimento de empresário"
-            loading="lazy"
-          >
-        </div>
-      </div>
-
-      <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
-      <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">&#8250;</button>
-    </div>
-
-    <div class="carousel-dots" id="carouselDots">
-      <button class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
-      <button class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
-      <button class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div class="cta-center">
-      <a href="#agendar" class="btn-cta">Quero Agendar Agora</a>
     </div>
   </div>
 </section>
@@ -215,15 +139,6 @@
 </section>
 
 <!-- ================================================================
-     FINAL CTA
-================================================================ -->
-<section class="section">
-  <div class="container cta-center">
-    <a href="#agendar" class="btn-cta">Quero Agendar Agora</a>
-  </div>
-</section>
-
-<!-- ================================================================
      FOOTER
 ================================================================ -->
 <footer class="site-footer">
@@ -236,7 +151,12 @@
   <p>© 2026 fullsalessystem.com | Todos os direitos reservados</p>
 </footer>
 
-<!-- Page scripts: vturb player, booking redirect, carousel -->
+<!-- Floating CTA -->
+<div class="floating-cta">
+  <a href="#agendar" class="btn-cta">Quero Agendar Agora</a>
+</div>
+
+<!-- Page scripts: booking redirect + floating CTA toggle -->
 <script src="script.js" defer></script>
 
 </body>
