@@ -25,6 +25,9 @@ window.addEventListener('message', function (e) {
 
   pbDl('pb_calendly_booked', { msg_type: t.type || t.event || t.action || 'string' });
 
+  /* Conversao Meta: agendamento e o evento mais valioso do funil (pixel vem via GTM) */
+  if (typeof fbq === 'function') fbq('track', 'Schedule');
+
   /* delay p/ tag GTM disparar antes do redirect (antes era síncrono) */
   setTimeout(function () {
     window.location.href = PB_REDIRECT_URL;
