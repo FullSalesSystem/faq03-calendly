@@ -9,7 +9,7 @@ function pbDl(evt, params) {
 }
 
 /* ── Booking GHL/LeadConnector: confirmação via postMessage + redirect ── */
-var PB_REDIRECT_URL = 'https://fap01-calendly-semi.fullsalessystem.com/';
+var PB_REDIRECT_URL = 'https://playbook-obrigado-final.fullsalessystem.com/';
 var pbBookedFired = false;
 
 window.addEventListener('message', function (e) {
