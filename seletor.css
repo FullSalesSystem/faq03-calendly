@@ -12,6 +12,6 @@
 .pbs-horas{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:560px;margin:0 auto}
 .pbs-hora{flex:0 0 84px;border:2px solid var(--border);background:#fff;border-radius:10px;min-height:44px;font:600 15px Inter,sans-serif;color:#1a1a1a;cursor:pointer}
 .pbs-hora:hover{border-color:var(--red)}
-.pbs-hora[aria-pressed=true]{border-color:var(--red);background:var(--red);color:#fff}
+.pbs-hora[aria-pressed=true]{border-color:#15803d;background:#15803d;color:#fff}
 .pbs-aviso{min-height:1.4em;margin-top:12px;color:var(--red-dark);font-size:14px;font-weight:600}
 .pbs-agora:focus-visible,.pbs-confirmar:focus-visible,.pbs-dia:focus-visible,.pbs-hora:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
