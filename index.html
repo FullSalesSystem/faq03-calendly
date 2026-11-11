@@ -39,6 +39,7 @@
   <link rel="dns-prefetch" href="https://link.msgsndr.com">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="seletor.css?v=20261111">
 </head>
 <body>
 
@@ -73,8 +74,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="subline">Agende um horário abaixo para realizar o seu plano personalizado com um consultor do nosso time:</p>
     </div>
     <div class="booking-widget">
-      <iframe src="https://api.leadconnectorhq.com/widget/booking/qMJWW3TkSzpm3jCDFOoS" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="qMJWW3TkSzpm3jCDFOoS_1777063533303"></iframe>
-      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+      <div id="pb-seletor" class="pbs" aria-live="polite"><p class="pbs-sub">Carregando horários…</p></div>
+      <div id="pb-ghl" hidden>
+        <iframe data-src="https://api.leadconnectorhq.com/widget/booking/qMJWW3TkSzpm3jCDFOoS" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="qMJWW3TkSzpm3jCDFOoS_1777063533303" title="Agenda"></iframe>
+      </div>
     </div>
     <div class="alert-warning" role="alert">
       <p><strong>Atenção:</strong> <span class="accent">Nossa equipe entrará em contato via ligação e/ou WhatsApp. É importante que você nos responda para confirmar seu agendamento.</span> Se não recebermos sua confirmação, sua vaga é automaticamente liberada para a próxima pessoa da fila.</p>
@@ -144,7 +147,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- Page scripts: booking redirect + floating CTA toggle -->
-<script src="script.js" defer></script>
+<script src="script.js?v=20261111" defer></script>
+<script src="seletor.js?v=20261111" defer></script>
 
 </body>
 </html>
