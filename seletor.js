@@ -35,7 +35,11 @@
     return e;
   }
 
+  var enviando = false;
   function enviar(corpo, btn) {
+    /* Um envio por vez: "Pode me ligar agora" e "Confirmar" sao botoes diferentes. */
+    if (enviando) return;
+    enviando = true;
     btn.disabled = true;
     var antes = btn.textContent;
     btn.textContent = 'Confirmando…';
@@ -48,6 +52,7 @@
         if (x.r.status >= 500) return mostrarGhl('crm_' + x.r.status);
         /* 400/429: horario venceu ou muitas tentativas. Mostra a mensagem e recarrega a lista. */
         aviso.textContent = x.j.error || 'Não deu certo. Escolha outro horário.';
+        enviando = false;
         btn.disabled = false;
         btn.textContent = antes;
         carregar();
