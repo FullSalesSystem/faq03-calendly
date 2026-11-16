@@ -9,7 +9,7 @@ function pbDl(evt, params) {
 }
 
 /* ── Booking GHL/LeadConnector: confirmação via postMessage + redirect ── */
-var PB_REDIRECT_URL = 'https://playbook-obrigado-final.fullsalessystem.com/';
+var PB_REDIRECT_URL = 'https://playbook-obrigado-final.fullsalessystem.com/?perfil=' + PB_VARIANTE;
 var pbBookedFired = false;
 
 /* ── Nao agendou: tag playbook-não-agendado-trigger no GHL ──────────────
